@@ -43,26 +43,44 @@ class SecondVC: UIViewController {
     
     
     @IBAction func buttonClicked(sender: UIButton) {
-        switch sender.tag {
-        case 1:
+        if sender.currentTitle == "Gray" {
             resetButtons()
             changeColor(forColor: #colorLiteral(red: 0.4509803922, green: 0.4509803922, blue: 0.4509803922, alpha: 1))
             highlighted(sender: sender)
-        case 2:
+        } else if sender.currentTitle == "Green" {
             resetButtons()
             changeColor(forColor: #colorLiteral(red: 0, green: 0.537254902, blue: 0.1529411765, alpha: 1))
             highlighted(sender: sender)
-        case 3:
+        } else if sender.currentTitle == "Orange" {
             resetButtons()
             changeColor(forColor: #colorLiteral(red: 1, green: 0.6, blue: 0.1294117647, alpha: 1))
             highlighted(sender: sender)
-        case 4:
+        } else if sender.currentTitle == "Default" {
             resetButtons()
             changeColor(forColor: #colorLiteral(red: 0.4673851704, green: 0.3750494015, blue: 1, alpha: 1))
             highlighted(sender: sender)
-        default:
-            break
         }
+        
+//        switch sender.tag {
+//        case 1:
+//            resetButtons()
+//            changeColor(forColor: #colorLiteral(red: 0.4509803922, green: 0.4509803922, blue: 0.4509803922, alpha: 1))
+//            highlighted(sender: sender)
+//        case 2:
+//            resetButtons()
+//            changeColor(forColor: #colorLiteral(red: 0, green: 0.537254902, blue: 0.1529411765, alpha: 1))
+//            highlighted(sender: sender)
+//        case 3:
+//            resetButtons()
+//            changeColor(forColor: #colorLiteral(red: 1, green: 0.6, blue: 0.1294117647, alpha: 1))
+//            highlighted(sender: sender)
+//        case 4:
+//            resetButtons()
+//            changeColor(forColor: #colorLiteral(red: 0.4673851704, green: 0.3750494015, blue: 1, alpha: 1))
+//            highlighted(sender: sender)
+//        default:
+//            break
+//        }
     }
     
     func changeColor(forColor color: UIColor) {
