@@ -166,6 +166,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="n49-wn-IJz"/>
                     </view>
+                    <connections>
+                        <outlet property="defaultBtn" destination="Dyf-AB-um2" id="enI-7R-M4p"/>
+                        <outlet property="grayBtn" destination="t90-eT-kEh" id="rh9-ZA-I39"/>
+                        <outlet property="greenBtn" destination="Nra-Ih-Scs" id="2ah-zq-rhd"/>
+                        <outlet property="orangeBtn" destination="9TY-Lb-gSZ" id="knf-aa-qUh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbk-ba-VsB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="GYF-lk-VKt" userLabel="Exit" sceneMemberID="exit"/>
