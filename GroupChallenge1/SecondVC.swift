@@ -43,23 +43,44 @@ class SecondVC: UIViewController {
     
     
     @IBAction func buttonClicked(sender: UIButton) {
-        if sender.currentTitle == "Gray" {
+        switch sender {
+        case grayBtn:
             resetButtons()
             changeColor(forColor: #colorLiteral(red: 0.4509803922, green: 0.4509803922, blue: 0.4509803922, alpha: 1))
             highlighted(sender: sender)
-        } else if sender.currentTitle == "Green" {
+        case greenBtn:
             resetButtons()
             changeColor(forColor: #colorLiteral(red: 0, green: 0.537254902, blue: 0.1529411765, alpha: 1))
             highlighted(sender: sender)
-        } else if sender.currentTitle == "Orange" {
+        case orangeBtn:
             resetButtons()
             changeColor(forColor: #colorLiteral(red: 1, green: 0.6, blue: 0.1294117647, alpha: 1))
             highlighted(sender: sender)
-        } else if sender.currentTitle == "Default" {
+        case defaultBtn:
             resetButtons()
             changeColor(forColor: #colorLiteral(red: 0.4673851704, green: 0.3750494015, blue: 1, alpha: 1))
             highlighted(sender: sender)
+        default:
+            break
         }
+        
+//        if sender.currentTitle == "Gray" {
+//            resetButtons()
+//            changeColor(forColor: #colorLiteral(red: 0.4509803922, green: 0.4509803922, blue: 0.4509803922, alpha: 1))
+//            highlighted(sender: sender)
+//        } else if sender.currentTitle == "Green" {
+//            resetButtons()
+//            changeColor(forColor: #colorLiteral(red: 0, green: 0.537254902, blue: 0.1529411765, alpha: 1))
+//            highlighted(sender: sender)
+//        } else if sender.currentTitle == "Orange" {
+//            resetButtons()
+//            changeColor(forColor: #colorLiteral(red: 1, green: 0.6, blue: 0.1294117647, alpha: 1))
+//            highlighted(sender: sender)
+//        } else if sender.currentTitle == "Default" {
+//            resetButtons()
+//            changeColor(forColor: #colorLiteral(red: 0.4673851704, green: 0.3750494015, blue: 1, alpha: 1))
+//            highlighted(sender: sender)
+//        }
         
 //        switch sender.tag {
 //        case 1:
